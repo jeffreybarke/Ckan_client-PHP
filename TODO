@@ -1,0 +1,23 @@
+Ckan_client-PHP roadmap
+Copyright (c) 2010 Jeffrey Barke <http://jeffreybarke.net/>
+Licensed under the MIT license
+
+For version 0.1.1 (hopefully 2010-07-18), I'd like to:
+
+	* Implement all of the package search parameters.
+	* Implement the rest of the search API.
+	* Review and implement any of the model API resources I missed.
+	* Review exception handling and improve it.
+	* Review documentation and improve it (both inline and external).
+
+For version 0.1.2 (hopefully 2010-07-25), I'd like to:
+
+	* Thoroughly review the entire codebase to make sure there are no bugs.
+	* Despite the fact the CKAN server returns a no-cache header, I'd like to 
+	  implement optional caching. Seems silly to hit the server for every
+	  request.
+	* Improve the search_display() method: extensibility and peformance.
+
+For version 0.1.3 (???), I'd like to:
+
+	* Create a WordPress plugin that uses this client.

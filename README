@@ -1,0 +1,52 @@
+Ckan_client-PHP
+Copyright (c) 2010 Jeffrey Barke <http://jeffreybarke.net/>
+Licensed under the MIT license
+
+
+Introduction
+------------
+
+Ckan_client-PHP is (unsurprisingly) a PHP client for the CKAN (Comprehensive 
+Knowledge Archive Network) <http://www.ckan.net/> API 
+<http://knowledgeforge.net/ckan/doc/ckan/api.html>.
+
+MIT License: ./LICENSE
+Version history: ./CHANGELOG
+Roadmap: ./TODO
+
+It includes a copy of Michel Fortin's PHP Markdown (copyright (c) 
+2004-2009 Michel Fortin <http://michelf.com/>. All rights reserved.) which is 
+based on on Markdown (copyright (c) 2003-2006 John Gruber 
+<http://daringfireball.net/>. All rights reserved.).
+
+Read Me: ./lib/php_markdown/PHP Markdown Readme.text
+License: ./lib/php_markdown/License.text
+
+
+Requirements
+------------
+
+Ckan_client-PHP requires PHP version 5.2.0 or later.
+
+
+Installation and usage
+----------------------
+
+More documentation will be forthcoming, but the basic usage should be evident
+via the demos (./demos/index.html).
+
+include_once('Ckan_client.php');
+
+If you only want to GET data, then:
+$ckan = new Ckan_client();
+
+If you intend on using any POST or PUT methods, you'll need to get a CKAN
+API key and:
+$ckan = new Ckan_client('xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx');
+
+
+Bugs, issues and feature requests
+--------------------------------
+
+If you find any bugs, note any issues or have any feature requests, please
+report them at http://github.com/jeffreybarke/Ckan_client-PHP/issues
