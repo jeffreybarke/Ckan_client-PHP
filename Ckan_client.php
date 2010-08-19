@@ -230,7 +230,7 @@ class Ckan_client
 	 */
 	private function set_user_agent()
 	{
-		if ('80' === $_SERVER['SERVER_PORT'])
+		if ('80' === @$_SERVER['SERVER_PORT'])
 		{
 			$server_name = 'http://' . $_SERVER['SERVER_NAME'];
 		}
